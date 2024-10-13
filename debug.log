@@ -1,0 +1,8 @@
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2275
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2326
+"GET /order/customers HTTP/1.1" 200 187
+"GET /order/products HTTP/1.1" 200 211
+"GET /order/customers HTTP/1.1" 200 187
