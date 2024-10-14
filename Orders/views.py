@@ -2,20 +2,26 @@ import json
 import logging
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
-from Orders.models import Product, Customer, Order
+from Orders.models import Product, Order
 from django.views.decorators.csrf import csrf_exempt
 import smtplib
-from django.core.mail import send_mail
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from rest_framework.decorators import api_view, permission_classes, authentication_classes
+from rest_framework.permissions import IsAuthenticated
+from customer.models import Customer
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
 
 logger = logging.getLogger(__name__)
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
 @csrf_exempt
 def create_order(request):
     if request.method == 'POST':
         try:
             data = json.loads(request.body)
-            customer_id = data['customer_id']
+            customer_id = request.user.id
             product_id = data['product_id']
             quantity = data['quantity']
 
@@ -71,13 +77,24 @@ def send_email(order_id,email,quantity,product,total_price,balance):
 
     subject = 'Order confirmation'
 
+    html_message = render_to_string('order_confirmation_email.html', {
+        'customer_name': email.split('@')[0],  # Assuming customer name is the email prefix
+        'order_id': order_id,
+        'product_name': product,
+        'quantity': quantity,
+        'total_price': total_price,
+        'remaining_balance': balance,
+    })
+    plain_message = strip_tags(html_message)
+
     msg = MIMEMultipart()
     msg['From'] = "Ordering System"
     msg['To'] = email_send
     msg['Subject'] = subject
+    msg.attach(MIMEText(html_message,'html'))
 
-    body = f"Order#: {order_id} \nQuantity: {quantity}\nProduct: {product}\nTotal price: {total_price}.\nRemaining balance is {balance} "
-    msg.attach(MIMEText(body, 'plain'))
+    #body = f"Order#: {order_id} \nQuantity: {quantity}\nProduct: {product}\nTotal price: {total_price}.\nRemaining balance is {balance} "
+    #msg.attach(MIMEText(body, 'plain'))
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
@@ -93,9 +110,14 @@ def send_email(order_id,email,quantity,product,total_price,balance):
 
 
 def get_all_customers(request):
-    customers = list(Customer.objects.values('id', 'name', 'email', 'balance'))
+    customers = list(Customer.objects.values('id', 'username', 'email', 'balance'))
     return JsonResponse({'customers': customers})
 
 def get_all_products(request):
     products = list(Product.objects.values('id', 'name', 'price','stock'))
-    return JsonResponse({'products': products})
+    return JsonResponse({'customer': products})
+
+
+# git add .
+# git commit -m "Initial commit"
+# git push -u origin master

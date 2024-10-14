@@ -6,3 +6,1895 @@ Not Found: /favicon.ico
 "GET /order/customers HTTP/1.1" 200 187
 "GET /order/products HTTP/1.1" 200 211
 "GET /order/customers HTTP/1.1" 200 187
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\Orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\Orders\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\Orders\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\Orders\models.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /order/signup/
+"POST /order/signup/ HTTP/1.1" 404 2759
+Internal Server Error: /customer/signup/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: customer_customer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 17, in post
+    if serializer.is_valid():
+       ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\serializers.py", line 499, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\fields.py", line 757, in run_validation
+    return super().run_validation(data)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\fields.py", line 539, in run_validation
+    self.run_validators(value)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\fields.py", line 551, in run_validators
+    validator(value, self)
+    ~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\validators.py", line 73, in __call__
+    if qs_exists(queryset):
+       ~~~~~~~~~^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\validators.py", line 21, in qs_exists
+    return queryset.exists()
+           ~~~~~~~~~~~~~~~^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1241, in exists
+    return self.query.has_results(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 598, in has_results
+    return compiler.has_results()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1530, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: customer_customer
+"POST /customer/signup/ HTTP/1.1" 500 190436
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 9910
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/css/base.css HTTP/1.1" 200 21310
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2326
+"GET /admin/customer/customer/ HTTP/1.1" 200 8295
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/Orders/order/ HTTP/1.1" 200 9615
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Orders/order/8/change/ HTTP/1.1" 200 13205
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /admin/Orders/order/8/delete/ HTTP/1.1" 200 8208
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"POST /admin/Orders/order/8/delete/ HTTP/1.1" 302 0
+"GET /admin/Orders/order/ HTTP/1.1" 200 9563
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /admin/Orders/order/7/change/ HTTP/1.1" 200 13205
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Orders/order/7/delete/ HTTP/1.1" 200 8208
+"POST /admin/Orders/order/7/delete/ HTTP/1.1" 302 0
+"GET /admin/Orders/order/ HTTP/1.1" 200 8420
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Orders/product/ HTTP/1.1" 200 9861
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Internal Server Error: /customer/signup/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 18, in post
+    customer = serializer.save()
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Learrning\Django\Task\project\customer\serializers.py", line 15, in create
+    customer.set_password(validated_data['password'])  # Hash the password
+    ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Customer' object has no attribute 'set_password'
+"POST /customer/signup/ HTTP/1.1" 500 102079
+D:\Learrning\Django\Task\project\customer\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /customer/signup/ HTTP/1.1" 201 125
+"GET /admin/customer/customer/ HTTP/1.1" 200 9451
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/customer/customer/1/change/ HTTP/1.1" 200 11300
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/customer/customer/ HTTP/1.1" 200 9451
+"POST /customer/signup/ HTTP/1.1" 201 133
+"GET /admin/customer/customer/ HTTP/1.1" 200 9661
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/customer/customer/2/change/ HTTP/1.1" 200 11299
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/customer/customer/2/change/ HTTP/1.1" 302 0
+"GET /admin/customer/customer/ HTTP/1.1" 200 9866
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /order/customers HTTP/1.1" 200 184
+"GET /admin/Orders/product/ HTTP/1.1" 200 9861
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Orders/product/add/ HTTP/1.1" 200 10267
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Orders/product/add/ HTTP/1.1" 302 0
+"GET /admin/Orders/product/ HTTP/1.1" 200 10302
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Not Found: /order/products
+"GET /order/products HTTP/1.1" 404 2761
+D:\Learrning\Django\Task\project\Orders\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /order/products HTTP/1.1" 200 288
+Unauthorized: /order/
+"POST /order/ HTTP/1.1" 401 58
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+"GET /admin/customer/customer/ HTTP/1.1" 200 9661
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/customer/customer/2/change/ HTTP/1.1" 200 11302
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 51, in post
+    user = Customer.objects.get(email=email, password=password)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+customer.models.Customer.DoesNotExist: Customer matching query does not exist.
+"POST /customer/login-jwt/ HTTP/1.1" 500 102057
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+D:\Learrning\Django\Task\project\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 51, in post
+    user = authenticate(request,email=email, password=password)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "D:\Learrning\Django\Task\project\customer\auth.py", line 8, in authenticate
+    if user.check_password(password):  # Compare the hashed password
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Customer' object has no attribute 'check_password'
+"POST /customer/login-jwt/ HTTP/1.1" 500 107134
+D:\Learrning\Django\Task\project\customer\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 51, in post
+    user = authenticate(request,email=email, password=password)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 77, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "D:\Learrning\Django\Task\project\customer\auth.py", line 8, in authenticate
+    if user.check_password(password):  # Compare the hashed password
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Customer' object has no attribute 'check_password'
+"POST /customer/login-jwt/ HTTP/1.1" 500 107134
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /customer/login-jwt/ HTTP/1.1" 200 512
+Unauthorized: /order/
+"POST /order/ HTTP/1.1" 401 51
+Unauthorized: /order/
+"POST /order/ HTTP/1.1" 401 51
+Unauthorized: /order/
+"POST /order/ HTTP/1.1" 401 51
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 401 51
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 91, in post
+    token, _ = Token.objects.get_or_create(user=user)  # Token is created here
+               ^^^^^^^^^^^^^
+AttributeError: type object 'Token' has no attribute 'objects'
+"POST /customer/login-jwt/ HTTP/1.1" 500 93739
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 91, in post
+    token, _ = Token.objects.get_or_create(user=user)  # Token is created here
+               ^^^^^^^^^^^^^
+AttributeError: type object 'Token' has no attribute 'objects'
+"POST /customer/login-jwt/ HTTP/1.1" 500 93739
+D:\Learrning\Django\Task\project\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 91, in post
+    token, _ = Token.objects.get_or_create(user=user)  # Token is created here
+               ^^^^^^^^^^^^^
+AttributeError: type object 'Token' has no attribute 'objects'
+"POST /customer/login-jwt/ HTTP/1.1" 500 93731
+D:\Learrning\Django\Task\project\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\Orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\Orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\Orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 91, in post
+    token, _ = Token.objects.get_or_create(user=user)  # Token is created here
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<6 lines>...
+        summarize=summarize,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1465, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1276, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1253, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "ibada": Must be "User" instance.
+"POST /customer/login-jwt/ HTTP/1.1" 500 147197
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 92, in post
+    token, _ = Token.objects.get_or_create(user=user)  # Token is created here
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<6 lines>...
+        summarize=summarize,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1465, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1276, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1253, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "ibada": Must be "User" instance.
+"POST /customer/login-jwt/ HTTP/1.1" 500 147197
+"GET /admin/customer/customer/2/change/ HTTP/1.1" 200 11851
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Internal Server Error: /admin/authtoken/tokenproxy/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: authtoken_token
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\options.py", line 836, in get_changelist_instance
+    return ChangeList(
+        request,
+    ...<12 lines>...
+        self.search_help_text,
+    )
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\views\main.py", line 123, in __init__
+    self.get_results(request)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\views\main.py", line 279, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\paginator.py", line 93, in count
+    return c()
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 608, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 568, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 554, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: authtoken_token
+"GET /admin/authtoken/tokenproxy/ HTTP/1.1" 500 184110
+"GET /admin/customer/customer/2/change/ HTTP/1.1" 200 11851
+"GET /admin/customer/customer/ HTTP/1.1" 200 10210
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/auth/user/ HTTP/1.1" 200 12334
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/customer/customer/ HTTP/1.1" 200 10210
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 92, in post
+    token, _ = Token.objects.get_or_create(user=user)  # Token is created here
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<6 lines>...
+        summarize=summarize,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1465, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1276, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1253, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "ibada": Must be "User" instance.
+"POST /customer/login-jwt/ HTTP/1.1" 500 146897
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 92, in post
+    token, _ = Token.objects.get_or_create(user=user)  # Token is created here
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<6 lines>...
+        summarize=summarize,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1465, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1276, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1253, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "John Doe": Must be "User" instance.
+"POST /customer/login-jwt/ HTTP/1.1" 500 146952
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 93, in post
+    token, _ = Token.objects.get_or_create(user=user)  # Token is created here
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<6 lines>...
+        summarize=summarize,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1465, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1276, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1253, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "John Doe": Must be "User" instance.
+"POST /customer/login-jwt/ HTTP/1.1" 500 146952
+D:\Learrning\Django\Task\project\customer\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 93, in post
+    token, _ = Token.objects.get_or_create(user=user)  # Token is created here
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<6 lines>...
+        summarize=summarize,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1465, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1276, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1253, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "Customer object (1)": Must be "User" instance.
+"POST /customer/login-jwt/ HTTP/1.1" 500 147172
+D:\Learrning\Django\Task\project\customer\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /order/customers HTTP/1.1" 200 184
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 92, in post
+    token, _ = Token.objects.get_or_create(user=customer)  # Token is created here
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<6 lines>...
+        summarize=summarize,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1465, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1276, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1253, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "John Doe": Must be "User" instance.
+"POST /customer/login-jwt/ HTTP/1.1" 500 146972
+D:\Learrning\Django\Task\project\customer\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 92, in post
+    token, _ = Token.objects.get_or_create(user=customer)  # Token is created here
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 916, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<6 lines>...
+        summarize=summarize,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1465, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1276, in check_related_objects
+    self.check_query_object_type(value, opts, field)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1253, in check_query_object_type
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Cannot query "John Doe": Must be "User" instance.
+"POST /customer/login-jwt/ HTTP/1.1" 500 146972
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 77, in post
+    customer = Customer.objects.first(email=email)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+TypeError: QuerySet.first() got an unexpected keyword argument 'email'
+"POST /customer/login-jwt/ HTTP/1.1" 500 97598
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 83, in post
+    if check_password(password, customer.password):  # Compare plain password with the hashed password
+                                ^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'password'
+"POST /customer/login-jwt/ HTTP/1.1" 500 93726
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\models.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /customer/login-jwt/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\module_loading.py", line 16, in cached_import
+    return getattr(module, class_name)
+AttributeError: module 'customer.auth' has no attribute 'EmailBackend'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 75, in post
+    user = authenticate(email=email, password=password)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\debug.py", line 42, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 68, in authenticate
+    for backend, backend_path in _get_backends(return_tuples=True):
+                                 ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 27, in _get_backends
+    backend = load_backend(backend_path)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 21, in load_backend
+    return import_string(path)()
+           ~~~~~~~~~~~~~^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\module_loading.py", line 32, in import_string
+    raise ImportError(
+    ...<2 lines>...
+    ) from err
+ImportError: Module "customer.auth" does not define a "EmailBackend" attribute/class
+"POST /customer/login-jwt/ HTTP/1.1" 500 122365
+D:\Learrning\Django\Task\project\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+D:\Learrning\Django\Task\project\customer\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+Watching for file changes with StatReloader
+Internal Server Error: /admin/customer/customer/2/change/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+    ~~~~~~~~~~~^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ~~~~~~~~~~~~~~~^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ~~~~~~~~^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ~~~~~~~~~^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        session_key=self.session_key, expire_date__gt=timezone.now()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_session
+"GET /admin/customer/customer/2/change/ HTTP/1.1" 500 201924
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 187, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\sites.py", line 230, in inner
+    if not self.has_permission(request):
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\admin\sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+    ~~~~~~~~~~~^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\utils\functional.py", line 419, in _setup
+    self._wrapped = self._setupfunc()
+                    ~~~~~~~~~~~~~~~^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ~~~~~~~~^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+                           ~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 191, in get_user
+    user_id = _get_user_session_key(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\auth\__init__.py", line 60, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 53, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 192, in _get_session
+    self._session_cache = self.load()
+                          ~~~~~~~~~^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 42, in load
+    s = self._get_session_from_db()
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 32, in _get_session_from_db
+    return self.model.objects.get(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        session_key=self.session_key, expire_date__gt=timezone.now()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_session
+"GET /admin/ HTTP/1.1" 500 201147
+Watching for file changes with StatReloader
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+Internal Server Error: /customer/signup/
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Learrning\Django\Task\project\customer\views.py", line 18, in post
+    customer = serializer.save()
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Learrning\Django\Task\project\customer\serializers.py", line 12, in create
+    username=validated_data['username'],
+             ~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'username'
+"POST /customer/signup/ HTTP/1.1" 500 102497
+"POST /customer/signup/ HTTP/1.1" 201 137
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+Watching for file changes with StatReloader
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7978
+"GET /admin/customer/customer/ HTTP/1.1" 200 9965
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/customer/customer/1/change/ HTTP/1.1" 200 17266
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 9214
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+D:\Learrning\Django\Task\project\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /customer/login-jwt/ HTTP/1.1" 200 81
+"GET /admin/authtoken/tokenproxy/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/authtoken/tokenproxy/ HTTP/1.1" 200 4223
+"POST /admin/login/?next=/admin/authtoken/tokenproxy/ HTTP/1.1" 200 4384
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4342
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7574
+"GET /admin/customer/customer/ HTTP/1.1" 200 9687
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /customer/signup/ HTTP/1.1" 201 137
+"POST /customer/login-jwt/ HTTP/1.1" 200 81
+"GET /admin/Orders/product/ HTTP/1.1" 200 8547
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Orders/product/add/ HTTP/1.1" 200 10534
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Orders/product/add/ HTTP/1.1" 302 0
+"GET /admin/Orders/product/ HTTP/1.1" 200 9930
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Insufficient balance for customer_id=2, required_balance=500.00
+"POST /order/ HTTP/1.1" 200 37
+"GET /admin/customer/customer/ HTTP/1.1" 200 9897
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/customer/customer/2/change/ HTTP/1.1" 200 16988
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/customer/customer/2/change/ HTTP/1.1" 302 0
+"GET /admin/customer/customer/ HTTP/1.1" 200 10098
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+D:\Learrning\Django\Task\project\Orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /order/
+"POST /order/ HTTP/1.1" 401 58
+Unauthorized: /order/
+"POST /order/ HTTP/1.1" 401 58
+D:\Learrning\Django\Task\project\Orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /order/
+"POST /order/ HTTP/1.1" 401 183
+D:\Learrning\Django\Task\project\project\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\customer\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\Orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\Orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Learrning\Django\Task\project\Orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /order/
+"POST /order/ HTTP/1.1" 401 183
+"POST /customer/login-jwt/ HTTP/1.1" 200 500
+Email sent successfully to mohamed.ibada2001@gmail.com
+"POST /order/ HTTP/1.1" 200 45
+Unauthorized: /order/
+"POST /order/ HTTP/1.1" 401 58
+D:\Learrning\Django\Task\project\customer\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Email sent successfully to mohamed.ibada2001@gmail.com
+"POST /order/ HTTP/1.1" 200 45
+Stock unavailable for product_id=1, requested_quantity=1, available_stock=0
+"POST /order/ HTTP/1.1" 200 62
+"GET /order/products HTTP/1.1" 200 91
+Internal Server Error: /order/customers
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 2162, in add_fields
+    join_info = self.setup_joins(
+        name.split(LOOKUP_SEP), opts, alias, allow_many=allow_m2m
+    )
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1824, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ~~~~~~~~~~~~~~~~~~^
+        names[:pivot],
+        ^^^^^^^^^^^^^^
+    ...<2 lines>...
+        fail_on_missing=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'name' into field. Choices are: auth_token, balance, date_joined, email, first_name, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, order, password, username
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Learrning\Django\Task\project\Orders\views.py", line 100, in get_all_customers
+    customers = list(Customer.objects.values('id', 'name', 'email', 'balance'))
+                     ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1313, in values
+    clone = self._values(*fields, **expressions)
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\query.py", line 1308, in _values
+    clone.query.set_values(fields)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 2463, in set_values
+    self.add_fields(field_names, True)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\Learrning\GP_with_gemini\GP_project\GP_apis\venv\Lib\site-packages\django\db\models\sql\query.py", line 2195, in add_fields
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Cannot resolve keyword 'name' into field. Choices are: auth_token, balance, date_joined, email, first_name, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, order, password, username
+"GET /order/customers HTTP/1.1" 500 110252
+D:\Learrning\Django\Task\project\Orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /order/customers HTTP/1.1" 200 195
+Watching for file changes with StatReloader
+"GET /order/products HTTP/1.1" 200 91
+Watching for file changes with StatReloader
+"GET /order/products HTTP/1.1" 200 91
+"GET /order/products HTTP/1.1" 200 91
+"GET /order/products HTTP/1.1" 200 91
+"GET /order/products HTTP/1.1" 200 91
+"GET /admin/customer/customer/2/change/ HTTP/1.1" 200 16988
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/base.css HTTP/1.1" 200 21310
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/customer/customer/2/delete/ HTTP/1.1" 200 8829
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"GET /admin/customer/customer/2/change/ HTTP/1.1" 200 16988
+"POST /admin/customer/customer/2/change/ HTTP/1.1" 302 0
+"GET /admin/customer/customer/ HTTP/1.1" 200 10098
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/customer/customer/add/ HTTP/1.1" 200 16630
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/customer/customer/add/ HTTP/1.1" 200 16871
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Bad Request: /customer/signup/
+"POST /customer/signup/ HTTP/1.1" 400 105
+"POST /customer/signup/ HTTP/1.1" 201 125
+"GET /admin/customer/customer/add/ HTTP/1.1" 200 16630
+"GET /admin/customer/customer/ HTTP/1.1" 200 10105
+"GET /admin/customer/customer/3/change/ HTTP/1.1" 200 16973
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /admin/customer/customer/ HTTP/1.1" 200 10105
+"GET /admin/Orders/product/ HTTP/1.1" 200 9713
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /admin/Orders/product/add/ HTTP/1.1" 200 10534
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Orders/product/add/ HTTP/1.1" 302 0
+"GET /admin/Orders/product/ HTTP/1.1" 200 10131
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/Orders/product/add/ HTTP/1.1" 200 10534
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Orders/product/add/ HTTP/1.1" 302 0
+"GET /admin/Orders/product/ HTTP/1.1" 200 10343
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Orders/product/1/change/ HTTP/1.1" 200 10837
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Orders/product/1/change/ HTTP/1.1" 302 0
+"GET /admin/Orders/product/ HTTP/1.1" 200 10357
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Orders/order/ HTTP/1.1" 200 10087
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Orders/order/1/change/ HTTP/1.1" 200 13586
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Orders/order/1/delete/ HTTP/1.1" 200 8475
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+"POST /admin/Orders/order/1/delete/ HTTP/1.1" 302 0
+"GET /admin/Orders/order/ HTTP/1.1" 200 10036
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /admin/Orders/order/2/change/ HTTP/1.1" 200 13582
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"POST /admin/Orders/order/2/change/ HTTP/1.1" 302 0
+"GET /admin/Orders/order/ HTTP/1.1" 200 10080
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/Orders/order/3/change/ HTTP/1.1" 200 13582
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/Orders/order/3/change/ HTTP/1.1" 302 0
+"GET /admin/Orders/order/ HTTP/1.1" 200 10080
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/customer/customer/ HTTP/1.1" 200 10105
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/customer/customer/2/change/ HTTP/1.1" 200 16991
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/customer/customer/2/change/ HTTP/1.1" 302 0
+"GET /admin/customer/customer/ HTTP/1.1" 200 10306
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Insufficient balance for customer_id=2, required_balance=200.00
+"POST /order/ HTTP/1.1" 200 37
+"GET /admin/Orders/product/ HTTP/1.1" 200 10138
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/Orders/product/2/change/ HTTP/1.1" 200 10789
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /order/products HTTP/1.1" 200 221
+"GET /admin/Orders/order/ HTTP/1.1" 200 10087
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /admin/Orders/order/4/change/ HTTP/1.1" 200 13586
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+Insufficient balance for customer_id=2, required_balance=200.00
+"POST /order/ HTTP/1.1" 200 37
+"GET /order/products HTTP/1.1" 200 221
+/app/Orders/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/Orders/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/Orders/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /order/products HTTP/1.1" 200 221
+/app/project/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /order/customers HTTP/1.1" 200 274
+"GET /order/products HTTP/1.1" 200 221
+Stock unavailable for product_id=1, requested_quantity=1, available_stock=0
+"POST /order/ HTTP/1.1" 200 62
+Email sent successfully to jack@gmail.com
+"POST /order/ HTTP/1.1" 200 45
+/app/Orders/views.py changed, reloading.
+Watching for file changes with StatReloader
+Stock unavailable for product_id=3, requested_quantity=1, available_stock=0
+"POST /order/ HTTP/1.1" 200 62
+"GET /order/products HTTP/1.1" 200 221
+"GET /order/customers HTTP/1.1" 200 274
+Insufficient balance for customer_id=2, required_balance=200.00
+"POST /order/ HTTP/1.1" 200 37
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+"POST /customer/login-jwt/ HTTP/1.1" 200 500
+Email sent successfully to jack@gmail.com
+"POST /order/ HTTP/1.1" 200 45
+Bad Request: /customer/signup/
+"POST /customer/signup/ HTTP/1.1" 400 50
+"GET /admin/customer/customer/ HTTP/1.1" 200 10105
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/customer/customer/1/change/ HTTP/1.1" 200 17038
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"POST /admin/customer/customer/1/change/ HTTP/1.1" 302 0
+"GET /admin/customer/customer/ HTTP/1.1" 200 10306
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /order/customers HTTP/1.1" 200 277
+Bad Request: /customer/login-jwt/
+"POST /customer/login-jwt/ HTTP/1.1" 400 31
+"POST /customer/login-jwt/ HTTP/1.1" 200 500
+Email sent successfully to modebeboo.20002@gmail.com
+"POST /order/ HTTP/1.1" 200 45
+/app/Orders/views.py changed, reloading.
+Watching for file changes with StatReloader
+/app/Orders/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /order/customers HTTP/1.1" 200 276
+"GET /order/products HTTP/1.1" 200 221
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /order/products HTTP/1.1" 200 221
+Watching for file changes with StatReloader
