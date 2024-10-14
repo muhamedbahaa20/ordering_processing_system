@@ -29,6 +29,10 @@ Run docker
 ```bash
 python manage.py createsuperuser
 ```
+###start deployed server
+replace `http://127.0.0.1:8000` with `https://bahaa-order-system-cmaabchjd9dag7dw.canadacentral-01.azurewebsites.net`
+
+
 ### Start the Development Server
 
 Run the following command to start the server:
