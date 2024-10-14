@@ -1898,3 +1898,15 @@ Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 "GET /order/products HTTP/1.1" 200 221
 Watching for file changes with StatReloader
+Unauthorized: /order/
+Unauthorized: /order/
+Unauthorized: /order/
+Unauthorized: /order/
+Unauthorized: /order/
+Unauthorized: /order/
+Unauthorized: /order/
+Unauthorized: /order/
+Unauthorized: /order/
+Insufficient balance for customer_id=1, required_balance=400.00
+Stock unavailable for product_id=1, requested_quantity=20, available_stock=10
+Email sent successfully to testuser@example.com
